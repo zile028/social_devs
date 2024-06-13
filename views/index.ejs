@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/bootstrap.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Register</h1>
+    <div class="row justify-content-center py-5">
+        <form class="col-5 d-flex flex-column gap-2" action="/auth/register" method="post">
+            <input class="form-control mb-3" type="text" placeholder="First name" name="firstName">
+            <input class="form-control mb-3" type="text" placeholder="Last name" name="lastName">
+            <input class="form-control mb-3" type="email" placeholder="Email" name="email">
+            <input class="form-control mb-3" type="password" placeholder="Password" name="password">
+            <input class="form-control mb-3" type="password" placeholder="Confirm password" name="confirmPassword">
+            <button type="submit" class="btn btn-primary form-control">Register</button>
+            <p>You already have account, go to login page</p>
+            <a class="btn btn-success" href="/login">Login </a>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
