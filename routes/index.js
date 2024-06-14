@@ -11,6 +11,7 @@ router.get("/login", (req, res) => {
 });
 
 router.use("/auth", require("./auth"));
+router.use("/post", require("./post"));
 
 router.get("*", (req, res) => {
     res.render("404");
